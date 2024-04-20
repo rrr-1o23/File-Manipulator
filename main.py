@@ -1,5 +1,5 @@
 
-import sys #commands = sys.argv
+import sys
 import os
 
 def main():
