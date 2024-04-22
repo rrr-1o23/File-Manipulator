@@ -14,24 +14,34 @@ class Manipulate:
     def execute(self):
         helper = Helper()
 
-        if (helper.validate() != True):
+        if (helper.validate() != True): # validator
             print("\nError : You have entered the command and arguments incorrectly\n")
 
-        elif (helper.isfile() != True):
+        elif (helper.is_inputfile() != True): # validator
             print("\n^^^^^^^^^^^^^^^^^^^^^^^^^\nThe file does not exist!!\n^^^^^^^^^^^^^^^^^^^^^^^^^\n")
-
-        elif (self.args[1] == "reverse"):
-            self.reverse()
-            print("\n --------------------- \n| You have succeeded! |\n ---------------------")
-            
-        elif (self.args[1] == "copy"):
-           self. copy()
 
         elif (self.args[1] == "duplicate-contents"):
             self.duplicate_contents()
+            print("\n --------------------- \n| You have succeeded! |\n ---------------------\n")
+
+        elif (self.args[1] == "repalce-string"):
+            self.replace_string()
+            print("\n --------------------- \n| You have succeeded! |\n ---------------------\n")
+        
+        elif (helper.is_outputfile() != True): # validator
+            print("\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+            print("Error : The same file name already exists. Please try again!")
+            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
+
+        elif (self.args[1] == "reverse"):
+            self.reverse()
+            print("\n --------------------- \n| You have succeeded! |\n ---------------------\n")
             
         else:
-            self.replace_string()
+           self. copy()
+           print("\n --------------------- \n| You have succeeded! |\n ---------------------\n")
+            
+            
 
 
     # ---.py reverse inputpath outputpath
@@ -112,7 +122,7 @@ class Helper:
         else:
             return True
     
-    def isfile(self):
+    def is_inputfile(self):
         inputpath = self.args[2]
         is_file = os.path.isfile(inputpath)
 
@@ -120,6 +130,14 @@ class Helper:
             return True
         else:
             return False
+        
+    def is_outputfile(self):
+        outputpath = self.args[3]
+        is_file = os.path.isfile(outputpath)
 
+        if is_file:
+            return False
+        else:
+            return True
 
 main()
