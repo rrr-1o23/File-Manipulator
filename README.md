@@ -9,7 +9,7 @@ python main.py reverse inputpath outputpath
 ```
 
 #### copy
-- inputpathにあるファイルのコピーを作成し，outputpathとして保存
+- inputpathにあるファイルのコピーを作成し，outputpathとして保存．
 ```
 python main.py copy inputpath outputpath
 ```
