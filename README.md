@@ -4,24 +4,24 @@
 
 #### reverse
 - inputpathにあるファイルを受け取り，outputpathにinputpathの内容を逆にした新しいファイルを作成します．
-```
-python main.py reverse inputpath outputpath
+```bash
+$python main.py reverse inputpath outputpath
 ```
 
 #### copy
 - inputpathにあるファイルのコピーを作成し，outputpathとして保存．
-```
-python main.py copy inputpath outputpath
+```bash
+$python main.py copy inputpath outputpath
 ```
 
 #### duplicate-contents
 - inputpathにあるファイルの内容を読み込み，その内容を複製し，複製された内容をinputpathにn回複製します．
-```
-python main.py duplicate-contents inputpath n
+```bash
+$python main.py duplicate-contents inputpath n
 ```
 
 #### replace-string
 - inputpathにあるファイルの内容から文字列'hogehoge'を検索し，'hogehoge'の全てを'fugafuga'に置き換えます．
-```
-python main.py repalce-string inputpath hogehoge fugafuga
+```bash
+$python main.py repalce-string inputpath hogehoge fugafuga
 ```
