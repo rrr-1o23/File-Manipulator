@@ -15,16 +15,16 @@
 &nbsp;
 
 #### 操作方法
-- **copy**<br>inputfile_pathにあるファイルを受け取り，outputfile_pathにinputfile_pathの内容を反転させた新しいファイルを作成
+- **copy**<br>inputfile_pathにあるファイルを受け取り，outputfile_pathにinputfile_pathの内容を反転させた新しいファイルを作成<br>
 `python main.py reverse inputfile_path outputfile_path`
 
-- **copy**<br>inputfile_pathにあるファイルのコピーを作成し，outputfile_pathとして保存
+- **copy**<br>inputfile_pathにあるファイルのコピーを作成し，outputfile_pathとして保存<br>
 `python main.py copy inputfile_path outputfile_path`
 
-- **duplicate-contents**<br>inputpathにあるファイルの内容を読み込み，その内容を複製し，複製された内容をinputfile_pathにn回複製
+- **duplicate-contents**<br>inputpathにあるファイルの内容を読み込み，その内容を複製し，複製された内容をinputfile_pathにn回複製<br>
 `python main.py duplicate-contents inputfile_path n`
 
-- **replace-string**<br>inputfile_pathにあるファイルの内容から文字列'hogehoge'を検索し，'hogehoge'の全てを'fugafuga'に置換
+- **replace-string**<br>inputfile_pathにあるファイルの内容から文字列'hogehoge'を検索し，'hogehoge'の全てを'fugafuga'に置換<br>
 `python main.py repalce-string inputpath hogehoge fugafuga`
 
 &nbsp;
