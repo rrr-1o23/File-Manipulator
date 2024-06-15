@@ -15,7 +15,9 @@ class Manipulate:
         helper = Helper()
 
         if (helper.validate() != True): # validator
-            print("\nError : You have entered the command and arguments incorrectly\n")
+            print("\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+            print("Error : You have entered the command and arguments incorrectly!")
+            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n")
 
         elif (helper.is_inputfile() != True): # validator
             print("\n^^^^^^^^^^^^^^^^^^^^^^^^^\nThe file does not exist!!\n^^^^^^^^^^^^^^^^^^^^^^^^^\n")
